@@ -1,0 +1,61 @@
+.wholeNav {
+    width: 100vw;
+    margin: 12px 0px 0px 0px;
+}
+
+.navBar {
+    background-color: #fbfbfb;
+    padding: 12px 56px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 98%;
+}
+
+.navBar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    position: relative;
+}
+
+.links p {
+    color: #822e27;
+    margin: 0 16px;
+}
+
+.navbtns {
+    padding-right: 56px;
+}
+
+.navbtns button:first-child {
+    color: #fbfbfb;
+    font-weight: 500;
+    background-color: #6CA2E3;
+    border: 2px solid #6CA2E3;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+
+.navbtns button:last-child {
+    color: #6CA2E3;
+    font-weight: 500;
+    background-color: #fbfbfb;
+    border: 2px solid #6CA2E3;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+
+.random-content {
+    width: 100%;
+    height: fit-content;
+    margin: 80px 0px 0px 0px;
+    text-align: center;
+    background-color: #b531b1;
+}

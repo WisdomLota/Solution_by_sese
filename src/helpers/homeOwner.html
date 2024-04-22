@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Owner</title>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Roboto Flex', sans-serif;
+            overflow-x: hidden;
+            background-color: #E9E9E9;
+        }
+
+        .engulf {
+            width: 80vw;
+            height: fit-content;
+            margin: 12px auto;
+        }
+
+        .heading {
+            padding: 8px 8px;
+            line-height: 8px;
+        }
+        .heading h2{
+            color: #822E27;
+        }
+
+        .heading h3 {
+            color: #822E27;
+        }
+
+        .body {
+            display: flex;
+            background-color: #fbfbfb;
+            box-shadow: 5px 5px 10px #39373778;
+            color: #822E27;
+            margin-bottom: 88px;
+            justify-content: space-between;
+        }
+
+        .inner-content {
+            padding: 24px 32px;
+        }
+
+        #edit-btn {
+            float: right;
+        }
+
+        .inner-content button {
+            font-size: 16px;
+            border-radius: 0px;
+            padding: 8px 8px;
+            color: #6CA2E3;
+            border: 2px solid #6CA2E3;
+            background-color: #fbfbfb;
+        }
+
+        .inner-content button:hover {
+            color: #fbfbfb;
+            background-color: #6CA2E3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="engulf">
+        <div class="heading">
+            <h2>PROFILE</h2>
+            <h3>Home Owner's Personal Information</h3>
+        </div>
+
+        <div class="body">
+            <div class="inner-content">
+                <p><b>Last Name: </b>Aliyu</p>
+                <p><b>First Name: </b>Alhassan</p>
+                <p><b>DOB: </b>April 23 2005</p>
+                <p><b>Gender: </b>Male</p>
+            </div>
+            <div class="inner-content">
+                <p><b>Email: </b>adamusemail@gmail.com</p>
+                <p><b>Mobile Number: </b>09123375464</p>
+                <p><b>Whatsapp Number: </b>+234 9123375464</p>
+                <p><b>Residential Address: </b>No 4 minmani island <br> street Kachia Meduguri Nigeria</p>
+                <button id="edit-btn">EDIT</button>
+            </div>
+        </div>
+
+        <div class="heading">
+            <h3>Home Owner's Realty Information</h3>
+        </div>
+
+        <div class="body">
+            <div class="inner-content">
+                <p><b>Number of Home(s) Owned: </b>[3]</p>
+                <p><b>List of Home(s) Owned: </b></p>
+                <ul>
+                    <li>4 Bedroom Terrace House 1a</li>
+                </ul>
+                <button>GET DOCUMENT OF OWNERSHIP</button>
+                <ul>
+                    <li>4 Bedroom Terrace House 2a</li>
+                </ul>
+                <button>GET DOCUMENT OF OWNERSHIP</button>
+                <ul>
+                    <li>4 Bedroom Terrace House 2c</li>
+                </ul>
+                <button>GET DOCUMENT OF OWNERSHIP</button>
+            </div>
+            <div class="inner-content">
+                <p><b>Number of Home(s) Claimed: </b>[3]</p>
+                <p><b>List of Home(s) Claimed: </b></p>
+                <ul>
+                    <li>4 Bedroom Terrace House 1a</li>
+                    <ul>
+                        <li>Price: ₦180 000 000</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>4 Bedroom Terrace House 2a</li>
+                    <ul>
+                        <li>Price: ₦180 000 000</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="inner-content">
+                <p><b>Total Cost of Home(s): </b></p>
+                <ul>
+                    <li>Price: ₦360 000 000</li>
+                </ul>
+                <p><b>Pending Installmental Payment: </b></p>
+                <ul>
+                    <li>4 Bedroom Terrace House 2c</li>
+                    <ul>
+                        <li>Price: ₦180 000 000</li>
+                        <li>Amount to be paid: ₦70 000 000</li>
+                    </ul>
+                </ul>
+                <button>COMPLETE PAYMENT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

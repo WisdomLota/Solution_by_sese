@@ -10,7 +10,7 @@ const SignUp = () => {
         {/* i do not know how to link pages so they will be placed on top of each other */}
         <SignUpFormB />
         <SignUpFormC />
-        {/* <SignUpTester />*/}
+        {/* <SignUpTester /> */}
         {/*I use the SignUpTester to try out certain things */}
         </>
      );

@@ -18,6 +18,7 @@ function SignUpFormC() {
         .oneOf([yup.ref("password"), null], "Passwords do not match")
         .required("Please confirm your password"),
         securityQuestion: yup.string().required("Please select security question"),
+        agreeToTerms: yup.boolean().oneOf([true], 'Please agree to the Terms and Conditions'),
     });
 
     const  { register, handleSubmit, formState: {errors} } = useForm({
@@ -64,12 +65,13 @@ function SignUpFormC() {
 
                 <div class="form-group" id="terms-conditions">
                     <label for="accept-terms" class="accept-terms">
-                        <input type="checkbox" id="accept-terms" name="accept-terms"/>
+                        <input type="checkbox" id="accept-terms" name="accept-terms" {...register('agreeToTerms')}/>
                         <span class="check-mark"></span> 
-                        <span class="terms-text">By checking this box you accept all of
+                        <span className="terms-text">By clicking this box you accept all of
                         our terms and conditions and privacy
                         policy (Please read the <b>terms and conditions</b> and <b>privacy policy</b> before checking the box)</span>
                     </label>
+                    {errors.agreeToTerms?.message}
                 </div>
 
                 
@@ -85,3 +87,4 @@ function SignUpFormC() {
 }
  
 export default SignUpFormC;
+
